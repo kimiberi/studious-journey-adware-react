@@ -1,0 +1,45 @@
+// Imports
+@import "variables";
+
+/* Position and sizing of burger button */
+@media all and (min-width: 992px) {
+  .bm-burger-button {
+    display: none;
+  }
+}
+
+@media all and (max-width: 991px) and (min-width: 320px) {
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 21px;
+    top: 30px;
+  }
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: var(--white);
+  padding: 3em 0;
+  width: 20rem;
+}
+
+div.nav-item {
+  text-transform: uppercase;
+  color: var(--theme-dark-blue);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+}
+div.nav-item:last-child {
+  padding: 0.7rem 0rem 0.7rem 1.5rem;
+}
+
+a.active {
+  background-color: var(--theme-dark-pink);
+  padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+  color: var(--white) !important; // due to "antd/dist/antd.css"
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,74 @@
+// Imports
+@import "variables";
+
+.registrations {
+  h3 {
+    color: var(--white);
+    text-transform: uppercase;
+  }
+
+  .left-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .blur-BG {
+    background-color: var(--white-opacity);
+    border: 1px solid var(--light-white);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 9px #dcdcdc !important;
+    padding: 1rem;
+    margin-top: 2em;
+  }
+
+  .each-title-report {
+    background-color: var(--theme-dark-blue);
+    color: var(--white);
+    padding: 1rem;
+  }
+
+  .dropdown-content {
+    padding: 2rem 1rem;
+
+    .date-time-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  // Ant Design
+  .ant-btn {
+    background-color: var(--theme-dark-pink);
+    color: var(--white);
+    text-transform: uppercase;
+    border: none;
+  }
+  .ant-divider-horizontal {
+    background-color: var(--theme-dark-blue);
+    padding: 0.07em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  @media all and (min-width: 768px) {
+    .right-row {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+    }
+  }
+
+  @media all and (max-width: 767px) and (min-width: 320px) {
+    .right-row,
+    .margin-top-content {
+      margin-top: 1em;
+    }
+
+    .ant-btn {
+      font-size: 1em;
+    }
+  }
+}

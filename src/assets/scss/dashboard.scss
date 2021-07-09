@@ -1,0 +1,330 @@
+// Imports
+@import "variables";
+
+.dashboard {
+  .card-opacity {
+    background-color: var(--light-gray-opacity);
+    margin: auto;
+  }
+
+  .card-registrations {
+    border-radius: 0.5rem; // 12px
+  }
+
+  .card-pink {
+    background-color: var(--theme-dark-pink);
+
+    .card-text,
+    span {
+      color: var(--theme-dark-pink);
+    }
+  }
+
+  .card-orange {
+    background-color: var(--theme-orange);
+
+    .card-text,
+    span {
+      color: var(--theme-orange);
+    }
+  }
+
+  .card-blue {
+    background-color: var(--theme-light-blue);
+
+    .card-text,
+    span {
+      color: var(--theme-light-blue);
+    }
+  }
+
+  .card-pink,
+  .card-orange,
+  .card-blue {
+    color: var(--white);
+    text-align: center;
+
+    .card-title,
+    .card-subtitle,
+    .card-text,
+    span {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .card-title {
+      font-size: 1rem;
+    }
+
+    .card-subtitle {
+      font-size: 2.5rem;
+    }
+
+    .card-text {
+      font-size: 0.9rem;
+    }
+
+    span {
+      font-size: 2rem;
+    }
+  }
+
+  .card-macha {
+    background-color: var(--theme-burnt-sienna);
+  }
+
+  .card-teal {
+    background-color: var(--theme-green);
+  }
+
+  .card-gray {
+    background-color: var(--gray-600);
+  }
+
+  .card-macha,
+  .card-teal,
+  .card-gray {
+    color: var(--white);
+    text-align: right;
+
+    .card-title,
+    .card-subtitle {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .card-title {
+      font-size: 1rem;
+    }
+
+    .card-subtitle {
+      font-size: 2.5rem;
+    }
+  }
+
+  .card-container {
+    border: 2px solid var(--theme-green);
+    border-radius: 0.5rem;
+    padding: 2.5em 0.5em 1.5em 0.5em;
+  }
+
+  .sub-card-container {
+    position: relative;
+    z-index: 2;
+    margin-bottom: -1.5em;
+  }
+
+  .huge-circular-icon {
+    background-color: var(--white);
+    box-shadow: 1px 1px 6px #b3b3b3 !important;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    margin-top: 0.1em;
+    margin-bottom: -0.6em;
+  }
+
+  .img-bordered-icon {
+    background-color: var(--white);
+    box-shadow: 1px 1px 6px var(--gray-300) !important;
+    border-radius: 0.5rem;
+    position: relative;
+    z-index: 2;
+    margin: 0.1em 0 -2em 1em;
+    padding: 0.5em;
+    width: 4.5em;
+  }
+
+  .variants-title {
+    background-color: var(--theme-green);
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    padding: 10px 15px 10px 15px;
+    width: 180px;
+    margin: auto;
+  }
+
+  .variants-content {
+    // outline: 1px solid pink;
+    width: 80%;
+    margin: auto;
+  }
+
+  .gray-content {
+    background-color: var(--gray-400);
+    border: 2px solid var(--gray-600);
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    .white-content {
+      background-color: var(--white);
+      border-radius: 0.5rem;
+      padding: 1rem;
+
+      .h4-align {
+        display: flex;
+        align-items: center;
+
+        h4 {
+          text-transform: uppercase;
+          color: var(--gray-600);
+        }
+      }
+
+      .pink-small-box,
+      .orange-small-box,
+      .blue-small-box {
+        border-radius: 0.5rem;
+        padding: 0.7em;
+        font-weight: 700;
+        color: var(--white);
+        text-align: right;
+        margin: 0 0.5em 0 0.5em;
+      }
+
+      .pink-small-box {
+        background-color: var(--theme-dark-pink);
+      }
+
+      .orange-small-box {
+        background-color: var(--theme-orange);
+      }
+
+      .blue-small-box,
+      .blue-small-box-right {
+        background-color: var(--theme-light-blue);
+      }
+
+      // no margin-right
+      .blue-small-box-right {
+        border-radius: 0.5rem;
+        padding: 0.7em;
+        font-weight: 700;
+        color: var(--white);
+        text-align: right;
+        margin-left: 0.5em;
+      }
+    }
+  }
+
+  @media all and (min-width: 992px) {
+    .card-opacity {
+      width: 85%;
+    }
+
+    .pink-small-box,
+    .orange-small-box,
+    .blue-small-box,
+    .blue-small-box-right {
+      font-size: 1em;
+    }
+  }
+
+  @media all and (max-width: 991px) and (min-width: 769px) {
+    .card-pink,
+    .card-orange,
+    .card-blue {
+      .card-subtitle {
+        font-size: 2rem;
+      }
+      span {
+        font-size: 1.7rem;
+      }
+    }
+
+    .card-macha,
+    .card-teal,
+    .card-gray {
+      .card-title {
+        margin-top: 2em;
+      }
+    }
+
+    .variants-content {
+      // outline: 1px solid blue;
+      font-size: 0.9em;
+      width: 100%;
+    }
+
+    .pink-small-box,
+    .orange-small-box,
+    .blue-small-box,
+    .blue-small-box-right {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media all and (min-width: 768px) {
+    img#bearbrand-logo {
+      width: 100%;
+    }
+
+    .substitute-variants-title,
+    .variant-spacing {
+      display: none;
+    }
+  }
+
+  @media all and (max-width: 767px) and (min-width: 500px) {
+    .variants-content {
+      // outline: 1px solid green;
+      width: 60%;
+    }
+  }
+
+  @media all and (max-width: 499px) and (min-width: 320px) {
+    .variants-content {
+      // outline: 1px solid red;
+      width: 90%;
+    }
+  }
+
+  @media all and (max-width: 767px) and (min-width: 320px) {
+    img#bearbrand-logo {
+      width: 12rem;
+      display: block;
+      margin: auto;
+      margin-bottom: 2rem;
+    }
+
+    .card-registrations {
+      margin-bottom: 1.5rem;
+    }
+
+    .card-container {
+      padding: 1.5em 0.5em;
+    }
+
+    .sub-card-container {
+      display: none;
+    }
+
+    .substitute-variants-title {
+      background-color: var(--theme-green);
+      color: var(--white);
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 700;
+      border-radius: 0.5rem;
+      padding: 10px 15px 10px 15px;
+      width: 180px;
+      margin: auto;
+      margin-bottom: 1em;
+    }
+
+    .variant-spacing {
+      height: 2rem;
+    }
+
+    .pink-small-box,
+    .orange-small-box,
+    .blue-small-box,
+    .blue-small-box-right {
+      font-size: 1rem;
+    }
+  }
+}

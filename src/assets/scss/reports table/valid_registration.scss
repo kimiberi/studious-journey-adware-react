@@ -1,0 +1,40 @@
+// Imports
+@import "../variables";
+
+.valid-registration-style {
+  th.ant-table-cell,
+  tr {
+    text-align: center !important;
+    font-size: 0.9em;
+  }
+
+  // Dark Blue Background
+  tr > th:first-child {
+    background-color: var(--theme-dark-blue);
+    color: var(--white);
+  }
+
+  // Black Background
+  .ant-table-thead tr:nth-of-type(2) .ant-table-cell {
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  // Orange Background
+  tr:nth-of-type(1) > th:nth-of-type(2) {
+    background-color: var(--theme-orange);
+    color: var(--white);
+  }
+
+  // Light Blue Background
+  tr:nth-of-type(1) > th:nth-of-type(3) {
+    background-color: var(--theme-light-blue);
+    color: var(--white);
+  }
+
+  // Dark Green Background
+  tr:nth-of-type(1) > th:nth-of-type(4) {
+    background-color: var(--theme-dark-green);
+    color: var(--white);
+  }
+}

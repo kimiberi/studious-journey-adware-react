@@ -1,0 +1,85 @@
+// Imports
+@import "variables";
+
+.search-style {
+  h2,
+  h3 {
+    color: var(--white);
+    text-transform: uppercase;
+  }
+
+  .blur-BG {
+    background-color: var(--white-opacity);
+    border: 1px solid var(--light-white);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 9px #dcdcdc !important;
+    padding: 1rem;
+    margin-top: 2em;
+  }
+
+  .each-title-report {
+    background-color: var(--theme-dark-blue);
+    color: var(--white);
+    padding: 1.6rem;
+    text-align: center;
+  }
+
+  .dropdown-content {
+    padding: 1rem;
+    width: 62%;
+    margin: auto;
+
+    .note-content {
+      color: var(--theme-dark-pink);
+      text-align: center;
+    }
+    .fields-content {
+      width: 50%;
+      margin: auto;
+    }
+    .button-center {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  // Ant Design
+  .ant-btn {
+    background-color: var(--theme-dark-pink);
+    color: var(--white);
+    text-transform: uppercase;
+    border: none;
+  }
+  .ant-divider-horizontal {
+    background-color: var(--theme-dark-blue);
+    padding: 0.07em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  @media all and (max-width: 991px) and (min-width: 769px) {
+    .dropdown-content {
+      padding: 1rem;
+      width: 92%;
+      margin: auto;
+
+      .fields-content {
+        width: 60%;
+        margin: auto;
+      }
+    }
+  }
+
+  @media all and (max-width: 768px) and (min-width: 320px) {
+    .dropdown-content {
+      padding: 1rem;
+      width: 85%;
+      margin: auto;
+
+      .fields-content {
+        width: 90%;
+        margin: auto;
+      }
+    }
+  }
+}

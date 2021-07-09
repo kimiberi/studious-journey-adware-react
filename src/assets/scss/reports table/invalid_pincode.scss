@@ -1,0 +1,55 @@
+// Imports
+@import "../variables";
+
+.invalid-pincode-style {
+  th.ant-table-cell,
+  tr {
+    text-align: center !important;
+    font-size: 0.9em;
+  }
+
+  tr > th:first-child,
+  tr > th:last-child,
+  tr:nth-of-type(1) .ant-table-cell:nth-of-type(5) {
+    background-color: var(--theme-dark-blue);
+    color: var(--white);
+  }
+
+  // Black Background
+  .ant-table-thead tr:nth-of-type(3) .ant-table-cell {
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  // Small Variants Background
+  tr:nth-of-type(1) > th:nth-of-type(2),
+  tr:nth-of-type(2) > th:nth-of-type(2),
+  tr:nth-of-type(2) > th:nth-of-type(3),
+  tr:nth-of-type(2) > th:nth-of-type(4),
+  tr:nth-of-type(2) > th:nth-of-type(5),
+  tr:nth-of-type(2) > th:nth-of-type(6) {
+    background-color: var(--theme-light-green);
+    color: var(--white);
+  }
+
+  // Medium Variants Background
+  tr:nth-of-type(1) > th:nth-of-type(3),
+  tr:nth-of-type(2) > th:nth-of-type(7),
+  tr:nth-of-type(2) > th:nth-of-type(8),
+  tr:nth-of-type(2) > th:nth-of-type(9),
+  tr:nth-of-type(2) > th:nth-of-type(10),
+  tr:nth-of-type(2) > th:nth-of-type(11) {
+    background-color: var(--theme-green);
+    color: var(--white);
+  }
+
+  // Large Variants Background
+  tr:nth-of-type(1) > th:nth-of-type(4),
+  tr:nth-of-type(2) > th:nth-of-type(12),
+  tr:nth-of-type(2) > th:nth-of-type(13),
+  tr:nth-of-type(2) > th:nth-of-type(14),
+  tr:nth-of-type(2) > th:nth-of-type(15) {
+    background-color: var(--theme-dark-green);
+    color: var(--white);
+  }
+}

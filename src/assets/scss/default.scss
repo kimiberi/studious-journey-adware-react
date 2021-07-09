@@ -1,0 +1,54 @@
+// Imports
+@import "variables";
+
+.spacing-height-min {
+  height: 1rem;
+}
+.spacing-height {
+  height: 2rem;
+}
+.spacing-height-large {
+  height: 4rem;
+}
+
+.spacing-height-huge {
+  height: 8em;
+}
+
+h1 {
+  color: var(--theme-dark-pink);
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+h2,
+h3 {
+  color: #18457c;
+}
+h4 {
+  font-size: 1.2em;
+}
+
+.divider-dark-opacity {
+  background-color: var(--black-opacity);
+  height: 2rem;
+}
+
+.blur-opacity {
+  background-color: var(--white-opacity);
+}
+
+.container-padding {
+  padding: 2rem;
+}
+
+@media all and (max-width: 991px) and (min-width: 320px) {
+  .spacing-height-huge {
+    height: 6em;
+  }
+
+  .spacing-height-platform {
+    height: 33em;
+  }
+}

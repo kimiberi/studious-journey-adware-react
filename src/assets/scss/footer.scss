@@ -1,0 +1,10 @@
+// Imports
+@import "variables";
+
+.footer {
+  padding: 1rem 2rem 3rem 2rem;
+  text-align: center;
+  border-top: 3px solid var(--theme-light-blue);
+  color: #2a7cb9;
+  background-color: var(--black-opacity) !important;
+}

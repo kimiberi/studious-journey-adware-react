@@ -1,0 +1,114 @@
+// Imports
+@import "variables";
+
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2rem 0 2rem;
+
+  background-image: url("../img/triangleVector.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+  h3 {
+    text-align: center;
+  }
+
+  img {
+    width: 15rem;
+    margin-bottom: 1rem;
+  }
+
+  .content-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--gray-500);
+    border-radius: 0.75rem; // 12px
+    padding: 30px;
+    letter-spacing: 0.1rem;
+    font-size: 12px;
+    background-color: var(--solid-white-opacity);
+  }
+
+  .box-shadow {
+    display: block;
+    margin: auto;
+  }
+
+  .colorful-divider {
+    width: 8rem;
+    height: 0.2rem;
+    margin-top: 0.5rem;
+  }
+
+  .login-text {
+    text-align: center;
+    padding: 0 1rem 0 1rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+    color: var(--gray-600);
+    text-align: center;
+  }
+
+  .ant-input-affix-wrapper {
+    border-radius: 1.5rem; // 12px
+    width: 18rem;
+    height: 3rem;
+    border: 1px solid var(--theme-dark-blue);
+  }
+
+  .ant-input-affix-wrapper {
+    margin-bottom: -10em;
+  }
+
+  .error-msg {
+    margin-top: -1rem;
+  }
+
+  .ant-btn {
+    background-color: var(--theme-pink);
+    color: var(--white);
+    border-radius: 1.5rem; // 12px
+    width: 18rem;
+    height: 3rem;
+    text-transform: uppercase;
+  }
+
+  @media all and (min-width: 769px) {
+    .content-box,
+    .box-shadow {
+      width: 50rem;
+    }
+  }
+
+  @media all and (max-width: 768px) and (min-width: 320px) {
+    .content-box,
+    .box-shadow {
+      width: 100%;
+    }
+  }
+
+  @media all and (max-width: 650px) and (min-width: 400px) {
+    .colorful-divider {
+      width: 4rem;
+    }
+  }
+  @media all and (max-width: 401px) and (min-width: 320px) {
+    .colorful-divider {
+      display: none;
+    }
+
+    .ant-input-affix-wrapper,
+    .ant-btn {
+      width: 16rem;
+    }
+  }
+}

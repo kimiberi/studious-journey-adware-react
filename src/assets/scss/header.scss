@@ -1,0 +1,115 @@
+// Imports
+@import "variables";
+
+.header {
+  img#adspark-logo {
+    width: 90%;
+  }
+
+  .navbar {
+    position: fixed; // sticky header
+    z-index: 90;
+    width: 100%;
+    border-bottom: 0.3rem solid var(--theme-dark-pink);
+  }
+
+  .bg-light {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  .navbar-text > a {
+    color: var(--theme-dark-blue);
+    font-weight: 600;
+  }
+  .navbar-text > a:nth-of-type(2) {
+    text-decoration: underline;
+  }
+
+  @media all and (min-width: 1200px) {
+    div.nav-item {
+      text-transform: uppercase;
+      color: var(--theme-dark-blue);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+    }
+    div.nav-item:last-child {
+      padding: 0.7rem 0rem 0.7rem 1.5rem;
+    }
+
+    a.active {
+      background-color: var(--theme-dark-pink);
+      padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+      color: var(--white) !important; // due to "antd/dist/antd.css"
+      border-radius: 0.5rem;
+    }
+
+    .spacing-height-min {
+      height: 1rem;
+    }
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  @media all and (max-width: 1199px) and (min-width: 992px) {
+    div.nav-item {
+      text-transform: uppercase;
+      color: var(--theme-dark-blue);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+    div.nav-item:last-child {
+      padding: 0.5rem 0rem 0.5rem 1rem;
+    }
+
+    a.active {
+      background-color: #b22559;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      color: var(--white) !important; // due to "antd/dist/antd.css"
+      border-radius: 0.5rem;
+    }
+  }
+
+  @media all and (max-width: 991px) and (min-width: 320px) {
+    #responsive-navbar-nav {
+      display: none;
+    }
+
+    img#adspark-logo {
+      width: 70%;
+    }
+  }
+
+  @media all and (max-width: 991px) and (min-width: 601px) {
+    img#adspark-logo {
+      width: 12rem;
+      display: block;
+      margin: auto;
+    }
+
+    span.navbar-brand {
+      width: 50%;
+    }
+  }
+
+  @media all and (max-width: 600px) and (min-width: 320px) {
+    img#adspark-logo {
+      width: 12rem;
+      display: block;
+      margin: auto;
+    }
+    span.navbar-brand {
+      width: 100%;
+    }
+    .navbar-text {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+:root {
+  // Colors System
+  --white: #fff;
+  --light-white: #f9f9f9;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #b4b9bb;
+  --gray-500: #a9a9a9;
+  --gray-600: #808080;
+  --gray-700: #566369;
+  --gray-800: #585858;
+  --gray-900: #212529;
+  --gray-901: #111;
+  --gray-902: #0d0d0d;
+  --black: #323232;
+
+  // THEME
+  --theme-black: #181818;
+  --theme-burnt-sienna: #89785d;
+  --theme-green: #155a57;
+  --theme-orange: #d87a3a;
+  --theme-pink: #e03997;
+  --theme-light-blue: #2a7cb9;
+  --theme-light-green: #287973;
+  --theme-dark-blue: #1c5b8e;
+  --theme-dark-green: #034541;
+  --theme-dark-pink: #b22559;
+
+  // BACKGROUND OPACITY
+  --black-opacity: rgba(0, 0, 0, 0.1);
+  --light-gray-opacity: rgba(255, 255, 255, 0.5);
+  --white-opacity: rgba(255, 255, 255, 0.7);
+  --solid-white-opacity: rgba(255, 255, 255, 0.9);
+}
